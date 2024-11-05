@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Tamil Nadu</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Tamil Nadu</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Tamil Nadu/Ooty.jpg" alt="Ooty - Queen of Hill Stations">
+                <h2>Ooty</h2>
+                <p>Known as the 'Queen of Hill Stations,' Ooty offers serene landscapes, tea gardens, and pleasant weather. A perfect escape into nature's beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Madurai.jpg" alt="Madurai - Temple City">
+                <h2>Madurai</h2>
+                <p>Famous for the Meenakshi Amman Temple, Madurai is a historic city known for its vibrant culture, rich history, and ancient architecture.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Kanchipuram.jpg" alt="Kanchipuram - City of a Thousand Temples">
+                <h2>Kanchipuram</h2>
+                <p>Known as the 'City of a Thousand Temples,' Kanchipuram is revered for its stunning temples and exquisite silk sarees.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Chidambaram.jpg" alt="Chidambaram - Spiritual Center">
+                <h2>Chidambaram</h2>
+                <p>A sacred town, Chidambaram is famous for the Nataraja Temple, a significant Hindu pilgrimage site and center of classical dance.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Kanyakumari.jpg" alt="Kanyakumari - Southern Tip of India">
+                <h2>Kanyakumari</h2>
+                <p>Located at the southern tip of India, Kanyakumari offers scenic views of the sunrise and sunset over the ocean, making it a unique destination.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Srirangam.jpg" alt="Srirangam - Temple Town">
+                <h2>Srirangam</h2>
+                <p>Home to the Sri Ranganathaswamy Temple, Srirangam is the largest functioning Hindu temple complex in the world, with impressive architecture.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Rameshwaram.jpg" alt="Rameshwaram - Sacred Pilgrimage">
+                <h2>Rameshwaram</h2>
+                <p>A prominent pilgrimage destination, Rameshwaram is known for its temples, especially the Ramanathaswamy Temple, and connection to the Ramayana.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Kodaikanal.jpg" alt="Kodaikanal - Princess of Hill Stations">
+                <h2>Kodaikanal</h2>
+                <p>Known as the 'Princess of Hill Stations,' Kodaikanal offers tranquil lakes, rolling hills, and beautiful forests, perfect for a relaxing getaway.</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamil Nadu/Coimbatore.jpg" alt="Coimbatore - Manchester of South India">
+                <h2>Coimbatore</h2>
+                <p>An industrial hub and gateway to the Nilgiris, Coimbatore is known for its textile industry and proximity to numerous tourist attractions.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

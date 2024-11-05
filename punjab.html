@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Punjab</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Punjab</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Punjab/Chandigarh.jpg" alt="Chandigarh">
+                <h2>Chandigarh</h2>
+                <p>The capital city of Punjab, known for its unique architecture, beautiful gardens, and the famous Rock Garden.</p>
+                <a href="pu1.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Amritsar.jpg" alt="Amritsar">
+                <h2>Amritsar</h2>
+                <p>Home to the iconic Golden Temple, Amritsar is a spiritual and cultural center for the Sikh community.</p>
+                <a href="pu2.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Mohali.jpg" alt="Mohali">
+                <h2>Mohali</h2>
+                <p>Known for cricket stadiums, Mohali is a modern city with beautiful parks and IT hubs.</p>
+                <a href="pu3.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Pathankot.jpg" alt="Pathankot">
+                <h2>Pathankot</h2>
+                <p>A gateway to the scenic hills of Himachal, famous for its forts and lush green landscapes.</p>
+                <a href="pu4.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Sirhind.jpg" alt="Sirhind">
+                <h2>Sirhind</h2>
+                <p>A historic city with deep connections to Sikh history, including the tombs of Mughal nobles.</p>
+                <a href="pu5.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Hoshiarpur.jpg" alt="Hoshiarpur">
+                <h2>Hoshiarpur</h2>
+                <p>Known for its handicrafts, Hoshiarpur offers a blend of cultural heritage and natural beauty.</p>
+                <a href="pu6.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Kapurthala.jpg" alt="Kapurthala">
+                <h2>Kapurthala</h2>
+                <p>Famous for its architecture inspired by French designs, known as the Paris of Punjab.</p>
+                <a href="pu7.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Ludhiana.jpg" alt="Ludhiana">
+                <h2>Ludhiana</h2>
+                <p>Punjab's largest city, known for its rich culture, industry, and historical sites.</p>
+                <a href="pu8.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Bhatinda.jpg" alt="Bhatinda">
+                <h2>Bhatinda</h2>
+                <p>A historic city with ancient forts, temples, and a unique blend of cultural sites.</p>
+                <a href="pu9.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Anandpur Sahib.jpg" alt="Anandpur Sahib">
+                <h2>Anandpur Sahib</h2>
+                <p>A sacred city for Sikhs, known for its spiritual significance and Sikh architecture.</p>
+                <a href="pu10.html" class="btn">Explore More</a>
+            </div>
+
+            <div class="card">
+                <img src="Punjab/Ropar Wetlands.jpg" alt="Ropar Wetlands">
+                <h2>Ropar</h2>
+                <p>A scenic spot for birdwatching and nature trails, surrounded by lush greenery.</p>
+                <a href="pu11.html" class="btn">Explore More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

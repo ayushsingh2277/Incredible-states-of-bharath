@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Himachal Pradesh</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Himachal Pradesh</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="himachal/kasol.jpg" alt="Kasol, Himachal Pradesh">
+                <h2>Kasol</h2>
+                <p>Kasol, nestled in the Parvati Valley, is famous for its scenic landscapes, trekking trails, and vibrant culture.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/bir-billing.jpg" alt="Bir-Billing, Himachal Pradesh">
+                <h2>Bir-Billing</h2>
+                <p>Bir-Billing is a world-renowned paragliding destination, offering breathtaking views and adventure sports.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/manali.jpg" alt="Manali, Himachal Pradesh">
+                <h2>Manali</h2>
+                <p>Manali, a popular hill station, is known for its snow-capped mountains, Rohtang Pass, and the Solang Valley.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/shimla.jpg" alt="Shimla, Himachal Pradesh">
+                <h2>Shimla</h2>
+                <p>Shimla, the capital of Himachal Pradesh, is famous for its colonial architecture and scenic mountain views.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/dharamshala.jpg" alt="Dharamshala, Himachal Pradesh">
+                <h2>Dharamshala</h2>
+                <p>Dharamshala is known for its Tibetan culture, stunning monasteries, and as the home of the Dalai Lama.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/dalhousie.jpg" alt="Dalhousie, Himachal Pradesh">
+                <h2>Dalhousie</h2>
+                <p>Dalhousie is a peaceful hill town with colonial charm, surrounded by pine-covered hills and misty landscapes.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/kalpa.jpg" alt="Kalpa, Himachal Pradesh">
+                <h2>Kalpa</h2>
+                <p>Kalpa is a small village in Kinnaur, famous for its apple orchards and majestic views of the Kinnaur Kailash range.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/tosh.jpg" alt="Tosh, Himachal Pradesh">
+                <h2>Tosh</h2>
+                <p>Tosh is a serene village offering picturesque views of the Parvati Valley, popular with trekkers and nature lovers.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/marhi.jpg" alt="Marhi, Himachal Pradesh">
+                <h2>Marhi</h2>
+                <p>Marhi is a scenic stop en route to Rohtang Pass, known for its snow and adventure activities like skiing and snowboarding.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/Tirthan Valley.jpg" alt="Tirthan Valley, Himachal Pradesh">
+                <h2>Tirthan Valley</h2>
+                <p>Tirthan Valley, part of the Great Himalayan National Park, is known for its pristine beauty, trout fishing, and hiking.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/kangra.jpg" alt="Kangra, Himachal Pradesh">
+                <h2>Kangra</h2>
+                <p>Kangra is famous for its ancient temples, the Kangra Fort, and its role in Himachal's spiritual heritage.</p>
+            </div>
+
+            <div class="card">
+                <img src="himachal/nako.jpg" alt="Nako, Himachal Pradesh">
+                <h2>Nako</h2>
+                <p>Nako is a picturesque village near the Indo-Tibetan border, known for its serene Nako Lake and Buddhist monasteries.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

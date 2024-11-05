@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Goa</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+            transition: opacity 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Goa</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="goa/Panaji.jpg" alt="Panaji, Goa">
+                <h2>Panaji</h2>
+                <p>Panaji is the capital of Goa, known for its Portuguese architecture, vibrant culture, and the scenic Mandovi River.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Margao.jpg" alt="Margao, Goa">
+                <h2>Margao</h2>
+                <p>Margao is known for its colonial buildings, bustling markets, and is a cultural hub in South Goa.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Mapusa.jpg" alt="Mapusa, Goa">
+                <h2>Mapusa</h2>
+                <p>A popular town in North Goa, famous for its Friday Market and close proximity to beaches like Anjuna and Vagator.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Calangute.jpg" alt="Calangute Beach, Goa">
+                <h2>Calangute Beach</h2>
+                <p>Known as the 'Queen of Beaches,' Calangute is one of the largest and most popular beaches in North Goa.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Candolim.jpg" alt="Candolim Beach, Goa">
+                <h2>Candolim Beach</h2>
+                <p>A serene beach located close to the famous Aguada Fort, offering water sports and relaxed vibes.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Old Goa.jpg" alt="Old Goa, Goa">
+                <h2>Old Goa</h2>
+                <p>A historical city with stunning churches and cathedrals like the Basilica of Bom Jesus and Se Cathedral.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Quepem.jpg" alt="Quepem, Goa">
+                <h2>Quepem</h2>
+                <p>A town in South Goa known for its peaceful environment, lush greenery, and historic churches.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Sanquelim.jpg" alt="Sanquelim, Goa">
+                <h2>Sanquelim</h2>
+                <p>Sanquelim is known for its natural beauty and the Arvalem Waterfalls and Caves, a serene getaway spot.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Bicholim.jpg" alt="Bicholim, Goa">
+                <h2>Bicholim</h2>
+                <p>A scenic town in North Goa, surrounded by nature, and home to the tranquil Mayem Lake.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Ponda.jpg" alt="Ponda, Goa">
+                <h2>Ponda</h2>
+                <p>Known as the temple town of Goa, Ponda is home to many Hindu temples and spice plantations.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Valpoi.jpg" alt="Valpoi, Goa">
+                <h2>Valpoi</h2>
+                <p>A small town in Goa known for its scenic drives, trekking, and proximity to the Mhadei Wildlife Sanctuary.</p>
+            </div>
+
+            <div class="card">
+                <img src="goa/Agonda.jpg" alt="Agonda Beach, Goa">
+                <h2>Agonda Beach</h2>
+                <p>A peaceful, less crowded beach in South Goa, perfect for those seeking solitude and natural beauty.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

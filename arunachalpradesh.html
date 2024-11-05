@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Arunachal Pradesh</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+            transition: opacity 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Arunachal Pradesh</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="arunachalpradesh/Bhalukpong.jpg" alt="Bhalukpong view">
+                <h2>Bhalukpong</h2>
+                <p>A gateway to Arunachal Pradesh, Bhalukpong is famous for its picturesque landscapes and adventure activities like rafting and trekking.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Bomdila.webp" alt="Bomdila Hill Station">
+                <h2>Bomdila</h2>
+                <p>A scenic hill station offering panoramic views of the Himalayas and a rich Buddhist culture.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Dirang.jpeg" alt="Dirang Valley">
+                <h2>Dirang</h2>
+                <p>A serene valley known for its pleasant weather, natural beauty, and ancient monasteries.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Gorichen Peak.jpg" alt="Gorichen Peak view">
+                <h2>Gorichen Peak</h2>
+                <p>One of the highest peaks in Arunachal Pradesh, offering challenging trekking opportunities.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Itanagar.png" alt="Itanagar City">
+                <h2>Itanagar</h2>
+                <p>The capital city of Arunachal Pradesh, known for its historic Ita Fort and Ganga Lake.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Namdapha National Park.jpg" alt="Namdapha National Park view">
+                <h2>Namdapha National Park</h2>
+                <p>A biodiversity hotspot and a haven for wildlife enthusiasts.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Nuranang Falls.jpg" alt="Nuranang Falls">
+                <h2>Nuranang Falls</h2>
+                <p>One of the most stunning waterfalls in Arunachal Pradesh, located near Tawang.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Pakhui Wildlife Sanctuary.webp" alt="Pakhui Wildlife Sanctuary">
+                <h2>Pakhui Wildlife Sanctuary</h2>
+                <p>A sanctuary known for its tigers and diverse flora and fauna.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Pasighat.jpeg" alt="Pasighat landscape">
+                <h2>Pasighat</h2>
+                <p>The oldest town in Arunachal Pradesh, known for its scenic beauty and adventure sports.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Roing.jpg" alt="Roing view">
+                <h2>Roing</h2>
+                <p>A picturesque town known for its lakes, valleys, and historical sites.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Sangti Valley.jpeg" alt="Sangti Valley">
+                <h2>Sangti Valley</h2>
+                <p>A tranquil valley famous for its natural beauty and migratory black-necked cranes.</p>
+            </div>
+
+            <div class="card">
+                <img src="arunachalpradesh/Sela Pass.jpg" alt="Sela Pass view">
+                <h2>Sela Pass</h2>
+                <p>A high-altitude mountain pass offering stunning views of snow-capped peaks.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

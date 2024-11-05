@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Gujarat</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Gujarat</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="gujarat/Somnath.jpg" alt="Somnath Temple, Gujarat">
+                <h2>Somnath</h2>
+                <p>Somnath is a holy town famous for its Somnath Temple, one of the twelve Jyotirlingas of Lord Shiva.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Ahmedabad.jpg" alt="Ahmedabad, Gujarat">
+                <h2>Ahmedabad</h2>
+                <p>Ahmedabad is known for its rich history, vibrant culture, and remarkable architecture including the Sabarmati Ashram.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Dwarka.webp" alt="Dwarka Temple, Gujarat">
+                <h2>Dwarka</h2>
+                <p>Dwarka is an ancient city known for its Dwarkadhish Temple, one of the four sacred Char Dham pilgrimage sites.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Rann Of Kutch.jpg" alt="Rann of Kutch, Gujarat">
+                <h2>Rann Of Kutch</h2>
+                <p>The Rann of Kutch is a vast white salt desert that comes alive during the Rann Utsav festival with cultural events.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Gir National Park.jpg" alt="Gir National Park, Gujarat">
+                <h2>Gir National Park</h2>
+                <p>Gir National Park is the only place in the world where you can spot the majestic Asiatic lions in the wild.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Vadodara.jpg" alt="Vadodara, Gujarat">
+                <h2>Vadodara</h2>
+                <p>Vadodara is famous for its grand palaces, including the stunning Laxmi Vilas Palace and rich cultural heritage.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Junagadh.jpg" alt="Junagadh, Gujarat">
+                <h2>Junagadh</h2>
+                <p>Junagadh is a city rich in history, home to Uparkot Fort and the ancient Ashoka Rock Edicts.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Saputara.jpg" alt="Saputara Hill Station, Gujarat">
+                <h2>Saputara</h2>
+                <p>Saputara is a charming hill station nestled in the Western Ghats, known for its scenic beauty and trekking trails.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Bhuj.jpg" alt="Bhuj, Gujarat">
+                <h2>Bhuj</h2>
+                <p>Bhuj is a historical city known for its ancient palaces, temples, and being the gateway to the Rann of Kutch.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Rajkot.jpg" alt="Rajkot, Gujarat">
+                <h2>Rajkot</h2>
+                <p>Rajkot is a vibrant city with a rich history, known for its role in India's independence movement and Gandhian heritage.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Kevadiya.jpg" alt="Kevadiya, Gujarat">
+                <h2>Kevadiya</h2>
+                <p>Kevadiya is home to the Statue of Unity, the world's tallest statue, dedicated to Sardar Vallabhbhai Patel.</p>
+            </div>
+
+            <div class="card">
+                <img src="gujarat/Modhera Sun Temple.jpg" alt="Modhera Sun Temple, Gujarat">
+                <h2>Modhera Sun Temple</h2>
+                <p>The Modhera Sun Temple is an ancient temple dedicated to the Sun God, known for its stunning architecture.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Uttarakhand</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Uttarakhand</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Uttarakhand/Jim Corbett National Park.jpg" alt="Jim Corbett National Park">
+                <h2>Jim Corbett National Park</h2>
+                <p>Famous for its Bengal tigers and diverse wildlife, it's a prime destination for wildlife enthusiasts.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Haridwar.jpg" alt="Haridwar">
+                <h2>Haridwar</h2>
+                <p>One of the holiest cities in India, Haridwar is renowned for its Ganga Aarti at Har Ki Pauri.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Rishikesh.jpg" alt="Rishikesh">
+                <h2>Rishikesh</h2>
+                <p>Known as the 'Yoga Capital of the World', Rishikesh is famous for its serene ashrams and adventure sports.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Nainital.jpg" alt="Nainital">
+                <h2>Nainital</h2>
+                <p>Known for its beautiful lake, Nainital is a popular hill station with scenic landscapes and boating activities.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Mussoorie.jpg" alt="Mussoorie">
+                <h2>Mussoorie</h2>
+                <p>The 'Queen of Hills', Mussoorie offers breathtaking views and is a favorite for honeymooners and families.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Almora.jpg" alt="Almora">
+                <h2>Almora</h2>
+                <p>A culturally rich town with stunning views of the Himalayas, Almora is known for its unique handicrafts.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Valley of Flowers National Park.jpg" alt="Valley of Flowers National Park">
+                <h2>Valley of Flowers</h2>
+                <p>This UNESCO World Heritage site is a paradise with blooming flowers and is ideal for trekking.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Auli.jpg" alt="Auli">
+                <h2>Auli</h2>
+                <p>A favorite winter destination, Auli is known for skiing and beautiful mountain vistas.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Uttarakhand/Munsiyari.jpg" alt="Munsiyari">
+                <h2>Munsiyari</h2>
+                <p>Known as 'Little Kashmir', Munsiyari offers a panoramic view of the Panchachuli peaks.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

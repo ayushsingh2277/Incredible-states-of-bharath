@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Meghalaya</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Meghalaya</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Meghalaya/Cherrapunji.jpg" alt="Cherrapunji">
+                <h2>Cherrapunji</h2>
+                <p>Known for its rainfall, Cherrapunji is a beautiful place with breathtaking landscapes, living root bridges, and lush greenery.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Balpakram National Park.jpg" alt="Balpakram National Park">
+                <h2>Balpakram National Park</h2>
+                <p>This scenic national park is home to a diverse range of flora and fauna, known as the 'Land of Spirits' by locals.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Shillong.jpg" alt="Shillong">
+                <h2>Shillong</h2>
+                <p>Nicknamed the 'Scotland of the East,' Shillong is known for its charming hills, lakes, and vibrant cultural heritage.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Living Root Bridge.jpg" alt="Living Root Bridge">
+                <h2>Living Root Bridge</h2>
+                <p>These unique bridges made from tree roots are iconic to Meghalaya and offer an extraordinary sight and adventure for visitors.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Umiam Lake.jpg" alt="Umiam Lake">
+                <h2>Umiam Lake</h2>
+                <p>A popular spot for water sports and picnics, Umiam Lake is surrounded by scenic hills and serene views.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Tura.jpg" alt="Tura">
+                <h2>Tura</h2>
+                <p>Tura offers stunning landscapes and rich biodiversity, making it a perfect destination for nature lovers.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Nohkalikai Falls.jpg" alt="Nohkalikai Falls">
+                <h2>Nohkalikai Falls</h2>
+                <p>One of the tallest waterfalls in India, Nohkalikai Falls is an awe-inspiring sight surrounded by beautiful landscapes.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Mawlynnong Village.jpg" alt="Mawlynnong Village">
+                <h2>Mawlynnong Village</h2>
+                <p>Often called the cleanest village in Asia, Mawlynnong is known for its well-maintained environment and warm hospitality.</p>
+            </div>
+
+            <div class="card">
+                <img src="Meghalaya/Krem Liat Prah.jpg" alt="Krem Liat Prah">
+                <h2>Krem Liat Prah</h2>
+                <p>The longest cave system in India, Krem Liat Prah is a must-visit for caving enthusiasts and adventure seekers.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

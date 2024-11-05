@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Sikkim</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Sikkim</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Sikkim/Tsomgo Lake.jpg" alt="Tsomgo Lake">
+                <h2>Tsomgo Lake</h2>
+                <p>A high-altitude glacial lake, Tsomgo is famous for its breathtaking views and is revered by locals. During winter, the lake freezes, offering a surreal experience.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Yumthang Valley.jpg" alt="Yumthang Valley">
+                <h2>Yumthang Valley</h2>
+                <p>Known as the 'Valley of Flowers,' Yumthang Valley is home to vibrant rhododendrons and stunning alpine scenery. Best visited in spring for full blooms.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Ravangla.jpg" alt="Ravangla">
+                <h2>Ravangla</h2>
+                <p>Offering panoramic views of the Himalayas, Ravangla is a tranquil hill station. It’s also known for Buddha Park, which houses a towering Buddha statue.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Khangchendzonga National Park.jpg" alt="Khangchendzonga National Park">
+                <h2>Khangchendzonga National Park</h2>
+                <p>A UNESCO World Heritage site, the park is rich in biodiversity and offers views of the majestic Kanchenjunga peak. Ideal for trekking and wildlife spotting.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Lachung.jpg" alt="Lachung">
+                <h2>Lachung</h2>
+                <p>A charming mountain village, Lachung serves as a gateway to the Yumthang Valley. Known for its apple orchards and serene beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Yuksom.jpg" alt="Yuksom">
+                <h2>Yuksom</h2>
+                <p>Once the capital of Sikkim, Yuksom is rich in history and is the starting point for treks to Mount Kanchenjunga. Known for its monasteries and natural beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Nathula Pass.jpg" alt="Nathula Pass">
+                <h2>Nathula Pass</h2>
+                <p>At 4,310 meters above sea level, this historic pass connects India and Tibet. Known for its scenic landscape and strategic importance.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Gangtok.jpg" alt="Gangtok">
+                <h2>Gangtok</h2>
+                <p>Sikkim’s vibrant capital, Gangtok offers bustling markets, monasteries, and stunning views of Mount Kanchenjunga. A perfect blend of tradition and modernity.</p>
+            </div>
+
+            <div class="card">
+                <img src="Sikkim/Pelling.jpg" alt="Pelling">
+                <h2>Pelling</h2>
+                <p>A popular tourist town, Pelling offers clear views of Mount Kanchenjunga and is home to historic sites like the Pemayangtse Monastery.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

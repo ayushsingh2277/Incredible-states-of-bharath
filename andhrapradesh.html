@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Andhra Pradesh</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card h2 {
+            font-size: 26px;
+            margin: 15px 0;
+            color: #ff5722;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Andhra Pradesh</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Andhra/vishakapatnam.webp" alt="Scenic beaches of Vishakapatnam">
+                <h2>Vishakapatnam</h2>
+                <p>A beautiful coastal city known for its serene beaches, hilltop parks, and rich cultural heritage.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/Araku-Valley.jpg" alt="Scenic view of Araku Valley">
+                <h2>Araku Valley</h2>
+                <p>A picturesque hill station with breathtaking landscapes, coffee plantations, and tribal culture.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="Andhra/tirupati.avif" alt="Famous Tirupati temple">
+                <h2>Tirupati</h2>
+                <p>Home to the world-renowned Venkateswara Temple, a major pilgrimage site in India.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/vijayawada.jpg" alt="View of the Krishna River in Vijayawada">
+                <h2>Vijayawada</h2>
+                <p>An important city with historic temples, the Krishna River, and a vibrant culture.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/CHITTOOR.avif" alt="Chittoor town">
+                <h2>Chittoor</h2>
+                <p>Known for its agriculture, temples, and scenic beauty, including the Horsley Hills.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/Srisailam.jpg" alt="Srisailam temple and scenic view">
+                <h2>Srisailam</h2>
+                <p>A spiritual destination with the famous Srisailam temple and surrounding natural beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/Ongole.jpg" alt="Ongole town in Andhra Pradesh">
+                <h2>Ongole</h2>
+                <p>A city known for its cattle breed, temples, and proximity to the Bay of Bengal.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/tadipatri.jpeg" alt="Ancient architecture in Tadipatri">
+                <h2>Tadipatri</h2>
+                <p>Famous for its ancient temples, with intricate carvings and rich history.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/PUTTAPARTHI.jpg" alt="Spiritual town of Puttaparthi">
+                <h2>Puttaparthi</h2>
+                <p>A spiritual hub known for the ashram of Sri Sathya Sai Baba.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/Yanam.jpg" alt="Yanam town by the river">
+                <h2>Yanam</h2>
+                <p>A charming town with French colonial influence, situated on the banks of the Godavari River.</p>
+            </div>
+
+            <div class="card">
+                <img src="Andhra/Guntur.jpeg" alt="Guntur city view">
+                <h2>Guntur</h2>
+                <p>A major city known for its historic significance, temples, and agriculture.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

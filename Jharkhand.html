@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Jharkhand</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Jharkhand</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Jharkhand/Deoghar.jpg" alt="Deoghar, Jharkhand">
+                <h2>Deoghar</h2>
+                <p>Deoghar is known for the Baidyanath Temple, one of the 12 Jyotirlingas, and is a major pilgrimage center in India.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Jamshedpur.jpg" alt="Jamshedpur, Jharkhand">
+                <h2>Jamshedpur</h2>
+                <p>Jamshedpur, known as the 'Steel City', is home to Tata Steel and beautiful parks like Jubilee Park and Tata Zoo.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Ranchi.jpg" alt="Ranchi, Jharkhand">
+                <h2>Ranchi</h2>
+                <p>Ranchi, the capital city, is known for its waterfalls, such as Dassam Falls and Hundru Falls, and scenic beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Betla National Park.jpg" alt="Betla National Park, Jharkhand">
+                <h2>Betla National Park</h2>
+                <p>Betla National Park is a wildlife sanctuary known for its rich biodiversity, including tigers, elephants, and leopards.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Ghatshila.jpg" alt="Ghatshila, Jharkhand">
+                <h2>Ghatshila</h2>
+                <p>Ghatshila is a scenic town on the banks of the Subarnarekha River, known for its hills and waterfalls.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Shikharji.jpg" alt="Shikharji, Jharkhand">
+                <h2>Shikharji</h2>
+                <p>Shikharji is a major Jain pilgrimage site located on Parasnath Hill, the highest peak in Jharkhand.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Dasham Falls.jpg" alt="Dasham Falls, Jharkhand">
+                <h2>Dasham Falls</h2>
+                <p>Dasham Falls is a majestic waterfall located near Ranchi, offering picturesque views and trekking opportunities.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Netarhat.jpg" alt="Netarhat, Jharkhand">
+                <h2>Netarhat</h2>
+                <p>Netarhat, often referred to as the 'Queen of Chotanagpur', is known for its stunning sunrise and sunset points.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Massanjore.jpg" alt="Massanjore Dam, Jharkhand">
+                <h2>Massanjore</h2>
+                <p>Massanjore Dam, built on the Mayurakshi River, is a picturesque spot ideal for boating and nature lovers.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Hazaribagh.jpg" alt="Hazaribagh, Jharkhand">
+                <h2>Hazaribagh</h2>
+                <p>Hazaribagh is known for its wildlife sanctuary and beautiful landscapes, making it a great destination for nature lovers.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Bokaro.jpg" alt="Bokaro, Jharkhand">
+                <h2>Bokaro</h2>
+                <p>Bokaro is famous for its steel plant, lush green parks, and the picturesque Garga Dam, a perfect spot for picnics.</p>
+            </div>
+
+            <div class="card">
+                <img src="Jharkhand/Dhanbad.jpg" alt="Dhanbad, Jharkhand">
+                <h2>Dhanbad</h2>
+                <p>Dhanbad, known as the 'Coal Capital of India', is home to several coal mines and the famous Indian School of Mines.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

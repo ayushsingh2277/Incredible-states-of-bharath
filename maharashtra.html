@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Maharashtra</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Maharashtra</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Maharashtra/Mumbai.jpg" alt="Mumbai">
+                <h2>Mumbai</h2>
+                <p>Mumbai is known as the 'City of Dreams' and offers attractions like Marine Drive, Gateway of India, and Bollywood.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Ajanta Caves.jpg" alt="Ajanta Caves">
+                <h2>Ajanta Caves</h2>
+                <p>The Ajanta Caves are renowned for ancient Buddhist rock-cut caves featuring impressive murals and sculptures.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Mahabaleshwar.jpg" alt="Mahabaleshwar">
+                <h2>Mahabaleshwar</h2>
+                <p>Mahabaleshwar is a hill station famous for its strawberry farms, scenic viewpoints, and pleasant climate.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Lonavala.jpg" alt="Lonavala">
+                <h2>Lonavala</h2>
+                <p>Lonavala, with its lush landscapes and monsoon charm, is a popular weekend getaway near Pune and Mumbai.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Shirdi.jpg" alt="Shirdi">
+                <h2>Shirdi</h2>
+                <p>Shirdi is the holy town associated with Sai Baba, attracting pilgrims from all over India.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Nashik.jpg" alt="Nashik">
+                <h2>Nashik</h2>
+                <p>Nashik is famous for its vineyards and the Kumbh Mela, one of the largest religious gatherings in the world.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Panchgani.jpg" alt="Panchgani">
+                <h2>Panchgani</h2>
+                <p>Panchgani is known for its scenic beauty, strawberry farms, and Table Land, a vast volcanic plateau.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Kolhapur.jpg" alt="Kolhapur">
+                <h2>Kolhapur</h2>
+                <p>Kolhapur is famous for its rich heritage, especially the Mahalakshmi Temple and Kolhapuri sandals.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Satara.jpg" alt="Satara">
+                <h2>Satara</h2>
+                <p>Satara is known for its scenic Kaas Plateau, a UNESCO World Heritage site, famous for seasonal wildflowers.</p>
+            </div>
+
+            <div class="card">
+                <img src="Maharashtra/Pune.jpg" alt="Pune">
+                <h2>Pune</h2>
+                <p>Pune, known as the 'Oxford of the East,' has historical sites, educational institutions, and vibrant nightlife.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Mizoram</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Mizoram</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="Mizoram/Aizawl.jpg" alt="Scenic view of Aizawl city">
+                <h2>Aizawl</h2>
+                <p>Aizawl is the scenic capital city of Mizoram, offering panoramic views of lush hills and vibrant local culture.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Lunglei.jpg" alt="Lunglei town surrounded by greenery">
+                <h2>Lunglei</h2>
+                <p>Known for its picturesque landscapes, Lunglei is ideal for nature lovers and trekkers seeking serene beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Mamit.jpg" alt="Dense forests and scenic vistas of Mamit">
+                <h2>Mamit</h2>
+                <p>Mamit is popular for its dense forests, wildlife sanctuaries, and cultural villages, offering rich biodiversity.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Kolasib.jpg" alt="Tranquil Kolasib landscapes">
+                <h2>Kolasib</h2>
+                <p>Known for its scenic charm and lush greenery, Kolasib offers a peaceful escape and agricultural vistas.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Reiek.jpg" alt="Hiking trails at Reiek">
+                <h2>Reiek</h2>
+                <p>Reiek is a popular trekking spot, known for its panoramic views and cultural festivals in Mizoram.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Vantawng Waterfalls.jpg" alt="Majestic Vantawng Waterfalls">
+                <h2>Vantawng Waterfalls</h2>
+                <p>Vantawng is Mizoram's highest waterfall, surrounded by thick bamboo forests, perfect for adventure lovers.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Falkawn Village.jpg" alt="Traditional huts in Falkawn Village">
+                <h2>Falkawn Village</h2>
+                <p>Falkawn is a traditional Mizo village that offers an insight into the rich heritage and customs of the Mizo people.</p>
+            </div>
+
+            <div class="card">
+                <img src="Mizoram/Phawngpui.jpg" alt="Blue Mountain, Phawngpui">
+                <h2>Phawngpui</h2>
+                <p>Phawngpui, also known as Blue Mountain, is the highest peak in Mizoram, renowned for its scenic beauty and orchids.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

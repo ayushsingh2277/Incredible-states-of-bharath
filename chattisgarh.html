@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Chhattisgarh</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+            transition: opacity 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Chhattisgarh</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="chhattisgarh/Barnawapara Wildlife Sanctuary.jpg" alt="Barnawapara Wildlife Sanctuary">
+                <h2>Barnawapara Wildlife Sanctuary</h2>
+                <p>Explore the rich biodiversity of Chhattisgarh's renowned wildlife sanctuary, home to exotic species and lush forests.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Raipur.jpg" alt="Raipur city">
+                <h2>Raipur</h2>
+                <p>The capital city of Chhattisgarh, known for its cultural heritage and vibrant markets.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Jagdalpur.jpg" alt="Jagdalpur view">
+                <h2>Jagdalpur</h2>
+                <p>Famous for the majestic Chitrakote Falls, Jagdalpur offers a blend of natural beauty and tribal culture.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Sirpur.jpg" alt="Sirpur historical site">
+                <h2>Sirpur</h2>
+                <p>An ancient town with significant archaeological sites, including Buddhist monasteries and temples.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Mainpat is.jpg" alt="Mainpat hill station">
+                <h2>Mainpat</h2>
+                <p>A beautiful hill station known as the 'Mini Tibet' of Chhattisgarh, famous for its scenic views and Tibetan settlements.</p>
+              
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Madku dweep.jpg" alt="Madku Dweep island">
+                <h2>Madku Dweep</h2>
+                <p>An island surrounded by rivers, known for its natural beauty and ancient temples.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Dhamtari.jpg" alt="Dhamtari view">
+                <h2>Dhamtari</h2>
+                <p>A gateway to the Sitanadi and Udanti wildlife sanctuaries, offering adventure and eco-tourism opportunities.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Malhar.jpg" alt="Malhar archaeological site">
+                <h2>Malhar</h2>
+                <p>Explore ancient temples and relics at this historical site, known for its archaeological significance.</p>
+               
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Rajim.jpg" alt="Rajim city">
+                <h2>Rajim</h2>
+                <p>A sacred town known for the Rajim Kumbh Mela and its rich cultural herit
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Bhoramdeo Temple.jpg" alt="Bhoramdeo Temple">
+                <h2>Bhoramdeo Temple</h2>
+                <p>Often referred to as the 'Khajuraho of Chhattisgarh', Bhoramdeo Temple is known for its intricate carvings.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/Dantewada.jpg" alt="Dantewada town">
+                <h2>Dantewada</h2>
+                <p>Home to the famous Danteshwari Temple and surrounded by natural beauty, Dantewada offers spiritual and cultural insights.</p>
+                
+            </div>
+
+            <div class="card">
+                <img src="chhattisgarh/chrmiri.jpg" alt="Chirmiri town">
+                <h2>Chirmiri</h2>
+                <p>A quiet hill station, often called the 'Heaven of Chhattisgarh,' surrounded by lush greenery and pleasant climate.</p>
+            
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

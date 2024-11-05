@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places in Uttar Pradesh</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #3b89c5 0%, #8346b5 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Cinzel', serif;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: white;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.85);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            margin: 20px 0;
+            color: #ff5722;
+            letter-spacing: 1px;
+        }
+
+        .card h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #ff5722;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tourist Places in Uttar Pradesh</h1>
+        <div class="grid">
+            <article class="card">
+                <img src="Uttar Pradesh/Agra.jpg" alt="Agra - City of the Taj Mahal">
+                <h2>Agra</h2>
+                <p>Home to the iconic Taj Mahal, Agra is a city steeped in history and architectural marvels.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Varanasi.jpg" alt="Varanasi - The Spiritual Capital of India">
+                <h2>Varanasi</h2>
+                <p>One of the oldest inhabited cities, Varanasi is known for its ghats and spiritual significance.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Ayodhya.jpg" alt="Ayodhya - Birthplace of Lord Rama">
+                <h2>Ayodhya</h2>
+                <p>A historic city revered as the birthplace of Lord Rama, rich in religious and cultural heritage.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Mathura.jpg" alt="Mathura - Birthplace of Lord Krishna">
+                <h2>Mathura</h2>
+                <p>Famed as the birthplace of Lord Krishna, Mathura is a hub for devotees and tourists alike.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Vrindavan.jpg" alt="Vrindavan - Land of Lord Krishna's Childhood">
+                <h2>Vrindavan</h2>
+                <p>Known for its temples and as the childhood home of Lord Krishna, Vrindavan attracts many visitors.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Prayagraj.jpg" alt="Prayagraj - Confluence of Three Rivers">
+                <h2>Prayagraj</h2>
+                <p>Famous for the Kumbh Mela, Prayagraj is where the Ganges, Yamuna, and Saraswati meet.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Sarnath.jpg" alt="Sarnath - Where Buddha Delivered His First Sermon">
+                <h2>Sarnath</h2>
+                <p>A significant Buddhist site where Gautama Buddha delivered his first sermon after enlightenment.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Lucknow.jpg" alt="Lucknow - The City of Nawabs">
+                <h2>Lucknow</h2>
+                <p>Renowned for its unique culture, architecture, and delicious cuisine, the city offers a royal experience.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Jhansi.jpg" alt="Jhansi - Land of Rani Lakshmibai">
+                <h2>Jhansi</h2>
+                <p>A city steeped in history, known for its fort and the valiant Rani Lakshmibai.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Kushinagar.jpg" alt="Kushinagar - Buddhist Pilgrimage Site">
+                <h2>Kushinagar</h2>
+                <p>A key Buddhist pilgrimage site where Lord Buddha attained Mahaparinirvana.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Bulandshahr.jpg" alt="Bulandshahr - Gateway to the Doab">
+                <h2>Bulandshahr</h2>
+                <p>A vibrant city with a rich history, often regarded as the gateway to the Doab region.</p>
+            </article>
+
+            <article class="card">
+                <img src="Uttar Pradesh/Ramnagar Fort.jpg" alt="Ramnagar Fort - A Historical Fortress">
+                <h2>Ramnagar Fort</h2>
+                <p>This fort is known for its impressive architecture and is situated near Varanasi.</p>
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>
