@@ -3,29 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourist Places in Punjab</title>
-
-    
+    <title>Tourist Places in Punjab - Pathankot</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
-        body {
-          background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
-          height: 100vh;
-          font-family: Arial, sans-serif;
-          color: #333;
+        :root {
+            --primary-color: #2E8B57;
+            --secondary-color: #3CB371;
+            --text-color: #333;
+            --background-color: #F0FFF0;
         }
-      </style>
-      
- </head>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            min-height: 100vh;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 45px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--secondary-color);
+            margin: 20px 0;
+        }
+
+        .attractions, .accommodations {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .attractions h2, .accommodations h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+    </style>
+</head>
 <body>
-    <h1>Pathankot</h1>
-    <p>One of the most famous places in Punjab, Pathankot borders Himachal Pradesh and Jammu & Kashmir. Blessed with lush greenery, this city looks even more stunning during the monsoon season. Alongside its lovely landscape, the city is known for its history as well. Pathankot also serves as a major railhead to various neighbouring cities in Himachal such as Dalhousie.
-        <hr>
-        <b>Top tourist attractions:</b> Nurpur Fort, Mukteshwar Temple, Kathgarh Temple, Shahpurkandi Fort, Ranjit Sagar Dam<hr>
-        <b>Places to stay:</b> Best Western La Vista Pathankot, Hotel Venice, Hotel Woodland, The Grand Hotel</p>
+    <div class="container">
+        <h1>Pathankot</h1>
+        <p>
+            One of the most famous places in Punjab, Pathankot borders Himachal Pradesh and Jammu & Kashmir. Blessed with lush greenery, this city looks even more stunning during the monsoon season. Alongside its lovely landscape, the city is known for its history as well. Pathankot also serves as a major railhead to various neighbouring cities in Himachal such as Dalhousie.
+        </p>
+        
+        <div class="attractions">
+            <h2>Top Tourist Attractions</h2>
+            <ul>
+                <li>Nurpur Fort</li>
+                <li>Mukteshwar Temple</li>
+                <li>Kathgarh Temple</li>
+                <li>Shahpurkandi Fort</li>
+                <li>Ranjit Sagar Dam</li>
+            </ul>
+        </div>
 
-   
-
+        <div class="accommodations">
+            <h2>Places to Stay</h2>
+            <ul>
+                <li>Best Western La Vista Pathankot</li>
+                <li>Hotel Venice</li>
+                <li>Hotel Woodland</li>
+                <li>The Grand Hotel</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

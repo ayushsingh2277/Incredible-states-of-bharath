@@ -3,30 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourist Places in Punjab</title>
-
-    
+    <title>Tourist Places in Punjab - Bhatinda</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
-        body {
-          background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
-          height: 100vh;
-          font-family: Arial, sans-serif;
-          color: #333;
+        :root {
+            --primary-color: #B8860B;
+            --secondary-color: #DAA520;
+            --text-color: #333;
+            --background-color: #FFF8DC;
         }
-      </style>
-      
- </head>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            min-height: 100vh;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: var(--text-color);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 45px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--secondary-color);
+            margin: 20px 0;
+        }
+
+        .attractions, .accommodations {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .attractions h2, .accommodations h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+    </style>
+</head>
 <body>
-    <h1>Bhatinda</h1>
-    <p>The City of Lakes, Bhatinda is a simple city, which still is among the tourist places in Punjab you cannot miss. There are various landmarks in the city that have brought massive development to the state, right from AIIMS to thermal power plants and the Central University of Punjab. The city narrates legendary tales of the past as the remnants stand as witnesses, making it one of the best places to visit in Punjab with friends.<br>
+    <div class="container">
+        <h1>Bhatinda</h1>
+        <p>
+            The City of Lakes, Bhatinda is a simple city, which still is among the tourist places in Punjab you cannot miss. There are various landmarks in the city that have brought massive development to the state, right from AIIMS to thermal power plants and the Central University of Punjab. The city narrates legendary tales of the past as the remnants stand as witnesses, making it one of the best places to visit in Punjab with friends.
+        </p>
+        <p>
+            Rulers like Mahmud of Ghazni, Muhammad Ghori, and Prithvi Raj Chauhan have fought wars and ruled the city in the erstwhile era. It is one of the best places to visit in Punjab with family.
+        </p>
+        
+        <div class="attractions">
+            <h2>Top Tourist Attractions</h2>
+            <ul>
+                <li>Qila Mubarak</li>
+                <li>Rose Garden</li>
+                <li>Jogger's Park</li>
+            </ul>
+        </div>
 
-        Rulers like Mahmud of Ghazni, Muhammad Ghori, and Prithvi Raj Chauhan have fought wars and ruled the city in the erstwhile era. It is one of the best places to visit in Punjab with family.
-        <hr>
-        <b>Top tourist attractions: </b>Qila Mubarak, Rose Garden, Jogger’s Park<hr>
-       <b> Places to stay: </b>Hotel Sapphire, Comfort Inn Tulip Heights, Country Inn & Suites by Radisson</p>
-   
-
+        <div class="accommodations">
+            <h2>Places to Stay</h2>
+            <ul>
+                <li>Hotel Sapphire</li>
+                <li>Comfort Inn Tulip Heights</li>
+                <li>Country Inn & Suites by Radisson</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
